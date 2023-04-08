@@ -6,22 +6,18 @@ Duolibre lets you authenticate to Duo 2FA systems without the proprietary Duo Mo
 
 ## Getting started
 
-Install from PyPI:
-
-```
-pip install --user duolibre
-```
+Clone this repository.
 
 Run Duolibre against the activation URL that was sent to your phone via SMS, or the URL of the QR code displayed on the web interface:
 
 ```
-duolibre https://m-XXXXXXXX.duosecurity.com/android/XXXXXXXXXXXXXXXXXXXX
+python duolibre.py https://m-XXXXXXXX.duosecurity.com/android/XXXXXXXXXXXXXXXXXXXX
 ```
 
 If you'd rather save the generated provisioning QR code to an SVG file instead of printing it to the terminal, pass `--output-file`:
 
 ```
-duolibre https://m-XXXXXXXX.duosecurity.com/android/XXXXXXXXXXXXXXXXXXXX --output-file ./qr-code.svg
+python duolibre.py https://m-XXXXXXXX.duosecurity.com/android/XXXXXXXXXXXXXXXXXXXX --output-file ./qr-code.svg
 ```
 
 ## Background
