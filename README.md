@@ -1,3 +1,5 @@
+This fork allows you to enter the URL of the QR code in addition to the activation URL.
+
 # Duolibre
 
 Duolibre lets you authenticate to Duo 2FA systems without the proprietary Duo Mobile app. It forges an activation request from Duo Mobile to Duo's servers and hands the resulting HOTP secret over to you. You can use this secret to generate HOTP codes programmatically, or import it into the two-factor authenticator of your choice; for Android users, I recommend [Aegis](https://f-droid.org/app/com.beemdevelopment.aegis) or [FreeOTP+](https://f-droid.org/app/org.liberty.android.freeotpplus) from F-Droid. Note that Duolibre doesn't provide a reverse-engineered alternative to Duo Push, so you'll have to use one-time passwords.
